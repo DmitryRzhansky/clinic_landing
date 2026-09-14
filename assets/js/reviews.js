@@ -21,7 +21,7 @@
 
     function getActivePanel() {
       const checked = root.querySelector(".reviews__tab-input:checked");
-      const key = checked ? checked.getAttribute("data-reviews-tab") : "avito";
+      const key = checked ? checked.getAttribute("data-reviews-tab") : "yandex";
       return panels.find(function (panel) {
         return panel.getAttribute("data-reviews-panel") === key;
       });
