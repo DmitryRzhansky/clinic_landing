@@ -9,7 +9,7 @@
       content="Вызов нарколога на дом в Москве круглосуточно. Позвоните +7 (495) 127-03-63 — специалисты прибудут в течение 30 минут."
     >
     <link rel="stylesheet" href="assets/vendor/lenis/lenis.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=119">
+    <link rel="stylesheet" href="assets/css/main.css?v=120">
   </head>
   <body>
     <main>
@@ -2152,6 +2152,214 @@
         </div>
       </section>
 
+      <section class="refusal" id="refusal" data-refusal aria-labelledby="refusal-title">
+        <div class="refusal__inner">
+          <header class="refusal__header">
+            <h2 class="refusal__title" id="refusal-title">
+              Если пациент не хочет лечиться
+            </h2>
+            <p class="refusal__lead">
+              Частый сценарий у Белорусской: вызывают родственники, а сам человек
+              отказывается. Выберите ситуацию — подскажем, как действовать спокойно
+              и без давления, пока врач на связи.
+            </p>
+          </header>
+
+          <div class="refusal__board">
+            <div class="refusal__picker-wrap">
+              <p class="refusal__picker-label" id="refusal-picker-label">
+                Что происходит сейчас
+              </p>
+              <div class="refusal__picker" role="radiogroup" aria-labelledby="refusal-picker-label">
+                <label class="refusal__choice">
+                  <input
+                    class="refusal__choice-input"
+                    type="radio"
+                    name="refusal-case"
+                    value="door"
+                    checked
+                  >
+                  <span class="refusal__choice-text">Не открывает дверь</span>
+                </label>
+                <label class="refusal__choice">
+                  <input
+                    class="refusal__choice-input"
+                    type="radio"
+                    name="refusal-case"
+                    value="talk"
+                  >
+                  <span class="refusal__choice-text">Готов только поговорить</span>
+                </label>
+                <label class="refusal__choice">
+                  <input
+                    class="refusal__choice-input"
+                    type="radio"
+                    name="refusal-case"
+                    value="deny"
+                  >
+                  <span class="refusal__choice-text">Отрицает проблему</span>
+                </label>
+                <label class="refusal__choice">
+                  <input
+                    class="refusal__choice-input"
+                    type="radio"
+                    name="refusal-case"
+                    value="anger"
+                  >
+                  <span class="refusal__choice-text">Злится и срывается</span>
+                </label>
+                <label class="refusal__choice">
+                  <input
+                    class="refusal__choice-input"
+                    type="radio"
+                    name="refusal-case"
+                    value="night"
+                  >
+                  <span class="refusal__choice-text">Ночь, силы на исходе</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="refusal__panels">
+              <article class="refusal__panel is-active" data-refusal-panel="door">
+                <h3 class="refusal__panel-title">Не открывает дверь</h3>
+                <div class="refusal__columns">
+                  <div class="refusal__col">
+                    <p class="refusal__col-title">Что делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">говорите спокойно через дверь, без ультиматумов</li>
+                      <li class="refusal__item">предложите «просто осмотр», а не «лечение навсегда»</li>
+                      <li class="refusal__item">позвоните врачу — подскажут формулировки и риск</li>
+                      <li class="refusal__item">если есть угроза жизни — сразу 103</li>
+                    </ul>
+                  </div>
+                  <div class="refusal__col refusal__col--avoid">
+                    <p class="refusal__col-title">Чего не делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">не ломайте дверь и не устраивайте скандал</li>
+                      <li class="refusal__item">не спорьте «ты алкоголик» — это закрывает контакт</li>
+                      <li class="refusal__item">не оставляйте человека одного при тяжёлых симптомах</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="refusal__actions">
+                  <a class="button button--accent" href="tel:+74951270363">Позвонить врачу</a>
+                  <p class="refusal__hint">Часто достаточно короткого разговора со специалистом, чтобы дверь открыли.</p>
+                </div>
+              </article>
+
+              <article class="refusal__panel" data-refusal-panel="talk">
+                <h3 class="refusal__panel-title">Готов только поговорить</h3>
+                <div class="refusal__columns">
+                  <div class="refusal__col">
+                    <p class="refusal__col-title">Что делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">согласитесь на разговор без обязательств</li>
+                      <li class="refusal__item">пусть врач сам объяснит, что будет на визите</li>
+                      <li class="refusal__item">фокус на облегчении «здесь и сейчас», не на «кодировании»</li>
+                      <li class="refusal__item">оставьте выбор за пациентом после осмотра</li>
+                    </ul>
+                  </div>
+                  <div class="refusal__col refusal__col--avoid">
+                    <p class="refusal__col-title">Чего не делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">не уговаривайте «подписать всё заранее»</li>
+                      <li class="refusal__item">не пугайте стационаром без реальной угрозы</li>
+                      <li class="refusal__item">не перебивайте и не давите «ради семьи»</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="refusal__actions">
+                  <a class="button button--accent" href="tel:+74951270363">Соединить с врачом</a>
+                  <p class="refusal__hint">Разговор по телефону часто снимает страх перед выездом.</p>
+                </div>
+              </article>
+
+              <article class="refusal__panel" data-refusal-panel="deny">
+                <h3 class="refusal__panel-title">Отрицает проблему</h3>
+                <div class="refusal__columns">
+                  <div class="refusal__col">
+                    <p class="refusal__col-title">Что делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">говорите о конкретных симптомах: сон, давление, тремор</li>
+                      <li class="refusal__item">предложите «проверить здоровье», без ярлыков</li>
+                      <li class="refusal__item">попросите врача коротко описать, что будет на месте</li>
+                      <li class="refusal__item">зафиксируйте, когда состояние стало хуже</li>
+                    </ul>
+                  </div>
+                  <div class="refusal__col refusal__col--avoid">
+                    <p class="refusal__col-title">Чего не делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">не спорьте о «норме» и стаже употребления</li>
+                      <li class="refusal__item">не стыдите и не сравнивайте с другими</li>
+                      <li class="refusal__item">не затягивайте, если симптомы нарастают</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="refusal__actions">
+                  <a class="button button--accent" href="tel:+74951270363">Получить консультацию</a>
+                  <p class="refusal__hint">Врач поможет перевести разговор с обвинений на помощь.</p>
+                </div>
+              </article>
+
+              <article class="refusal__panel" data-refusal-panel="anger">
+                <h3 class="refusal__panel-title">Злится и срывается</h3>
+                <div class="refusal__columns">
+                  <div class="refusal__col">
+                    <p class="refusal__col-title">Что делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">снизьте голос, уберите аудиторию и лишний шум</li>
+                      <li class="refusal__item">дайте паузу, затем предложите помощь «без разборок»</li>
+                      <li class="refusal__item">если есть угроза или оружие — немедленно 103</li>
+                      <li class="refusal__item">опишите врачу поведение до выезда</li>
+                    </ul>
+                  </div>
+                  <div class="refusal__col refusal__col--avoid">
+                    <p class="refusal__col-title">Чего не делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">не отвечайте агрессией и не удерживайте силой</li>
+                      <li class="refusal__item">не провоцируйте спорами о «вине»</li>
+                      <li class="refusal__item">не вызывайте бригаду «назло» без понимания риска</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="refusal__actions">
+                  <a class="button button--accent" href="tel:+74951270363">Срочно связаться</a>
+                  <p class="refusal__hint">При угрозе жизни и безопасности приоритет — 103, не уговоры.</p>
+                </div>
+              </article>
+
+              <article class="refusal__panel" data-refusal-panel="night">
+                <h3 class="refusal__panel-title">Ночь, силы на исходе</h3>
+                <div class="refusal__columns">
+                  <div class="refusal__col">
+                    <p class="refusal__col-title">Что делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">не ждите утра, если сон, давление и тревога уже «ломают»</li>
+                      <li class="refusal__item">скажите врачу: ночь, отказ, какие симптомы сейчас</li>
+                      <li class="refusal__item">попросите ближайшего взрослого остаться рядом</li>
+                      <li class="refusal__item">подготовьте документы и доступ к воде / свету</li>
+                    </ul>
+                  </div>
+                  <div class="refusal__col refusal__col--avoid">
+                    <p class="refusal__col-title">Чего не делать</p>
+                    <ul class="refusal__list">
+                      <li class="refusal__item">не давайте случайные таблетки «на глаз»</li>
+                      <li class="refusal__item">не оставляйте одного в ванной или на балконе</li>
+                      <li class="refusal__item">не откладывайте звонок из‑за стыда перед соседями</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="refusal__actions">
+                  <a class="button button--accent" href="tel:+74951270363">Вызвать ночью</a>
+                  <p class="refusal__hint">Ночной выезд у Белорусской — обычная практика, анонимно.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="certificates" id="certificates" data-certificates aria-labelledby="certificates-title">
         <div class="certificates__inner">
           <h2 class="certificates__title" id="certificates-title">Аттестаты аккредитации</h2>
@@ -3209,6 +3417,7 @@
     <script src="assets/js/reviews.js?v=5" defer></script>
     <script src="assets/js/cases.js?v=1" defer></script>
     <script src="assets/js/calculator.js?v=2" defer></script>
+    <script src="assets/js/refusal.js?v=1" defer></script>
     <script src="assets/js/certificates.js?v=1" defer></script>
     <script src="assets/js/videos.js?v=6" defer></script>
     <script src="assets/js/faq.js?v=1" defer></script>
