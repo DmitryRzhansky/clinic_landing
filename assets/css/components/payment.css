@@ -10,7 +10,7 @@
 }
 
 .payment__header {
-  max-width: 42rem;
+  max-width: 46rem;
   margin: 0 0 1.5rem;
 }
 
@@ -112,10 +112,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
-
-  .payment__item:last-child {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (min-width: 64rem) {
@@ -132,26 +128,16 @@
   }
 
   .payment__list {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.15rem;
   }
 
   .payment__item {
-    grid-column: span 2;
     grid-template-columns: 1fr;
     justify-items: start;
     gap: 0.95rem;
     min-height: 100%;
     padding: 1.25rem 1.2rem 1.35rem;
-  }
-
-  .payment__item:nth-child(4),
-  .payment__item:nth-child(5) {
-    grid-column: span 3;
-  }
-
-  .payment__item:last-child {
-    grid-column: span 3;
   }
 
   .payment__icon-wrap {
