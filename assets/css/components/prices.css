@@ -10,7 +10,7 @@
 }
 
 .prices__header {
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
   text-align: center;
 }
 
@@ -22,11 +22,105 @@
   line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--color-text-dark);
-  white-space: nowrap;
+  text-wrap: balance;
+}
+
+.prices__lead {
+  margin: 1rem auto 0;
+  max-width: 46rem;
+  font-family: var(--font-text);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.prices__lead + .prices__lead {
+  margin-top: 0.75rem;
+}
+
+.prices__lead strong {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+ul.prices__geo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: var(--radius-xl);
+  background-color: var(--color-white);
+  box-shadow: 0 0.75rem 1.75rem rgba(25, 45, 43, 0.05);
+  overflow: hidden;
+}
+
+.prices__geo + .prices__board {
+  margin-top: 1.5rem;
+}
+
+.prices__geo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  min-width: 0;
+  padding: 1.15rem 1.25rem;
+}
+
+.prices__geo-item + .prices__geo-item {
+  border-top: 1px solid rgba(25, 25, 25, 0.07);
+}
+
+.prices__geo-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  color: var(--color-accent);
+  background: linear-gradient(
+    160deg,
+    rgba(28, 163, 151, 0.14) 0%,
+    rgba(28, 163, 151, 0.05) 100%
+  );
+}
+
+.prices__geo-icon svg {
+  display: block;
+}
+
+.prices__geo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+  padding-top: 0.15rem;
+}
+
+.prices__geo-label {
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.prices__geo-value {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-dark);
 }
 
 .prices__board {
-  padding: 1.5rem 1.25rem 1.75rem;
+  margin-top: 0;
+  padding: 1.75rem 1.35rem 2rem;
   border-radius: var(--radius-xl);
   background-color: var(--color-white);
   box-shadow: 0 1rem 2.5rem rgba(25, 45, 43, 0.06);
@@ -35,7 +129,7 @@
 .prices__columns {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.25rem;
+  gap: 2.5rem;
 }
 
 .prices__column {
@@ -44,9 +138,9 @@
 
 .prices__column-head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.875rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
 }
 
 .prices__column-icon {
@@ -67,67 +161,18 @@
   color: var(--color-text-dark);
 }
 
-.prices__column-label {
+.prices__column-price {
   display: block;
-  margin-top: 0.2rem;
-  font-family: var(--font-text);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-}
-
-.prices__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.prices__item {
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(25, 25, 25, 0.08);
-}
-
-.prices__item:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.prices__row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.prices__name {
-  display: block;
-  margin: 0;
-  font-family: var(--font-text);
-  font-size: 1.0625rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: var(--color-text-dark);
-}
-
-.prices__cost {
-  flex-shrink: 0;
-  margin: 0;
+  margin: 0.35rem 0 0;
   font-family: var(--font-headline);
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.02em;
   color: var(--color-text-dark);
-  white-space: nowrap;
 }
 
-.prices__cost span {
+.prices__column-price span {
   font-family: var(--font-text);
   font-size: 0.875rem;
   font-weight: 500;
@@ -139,37 +184,63 @@
   font-family: var(--font-text);
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--color-text-muted);
 }
 
+.prices__list-title {
+  margin: 1.25rem 0 0.65rem;
+  font-family: var(--font-text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-dark);
+}
+
 .prices__includes {
-  margin: 0.65rem 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.45rem;
 }
 
 .prices__includes li {
-  position: relative;
-  padding-left: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
   font-family: var(--font-text);
   font-size: 0.8125rem;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--color-text-muted);
 }
 
 .prices__includes li::before {
   content: "";
-  position: absolute;
-  top: 0.45em;
-  left: 0;
+  flex-shrink: 0;
   width: 0.35rem;
   height: 0.35rem;
+  margin-top: 0.55em;
   border-radius: 50%;
   background-color: var(--color-accent);
+}
+
+.prices__footnote {
+  margin: 1.25rem 0 0;
+  padding: 0.75rem 0 0;
+  border-top: 1px solid rgba(25, 25, 25, 0.08);
+  font-family: var(--font-text);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.prices__footnote strong {
+  color: var(--color-text-dark);
+  font-weight: 600;
 }
 
 .prices__footer {
@@ -181,19 +252,6 @@
   border-top: 1px solid rgba(25, 25, 25, 0.08);
 }
 
-.prices__note {
-  margin: 0;
-  font-family: var(--font-text);
-  font-size: 0.875rem;
-  line-height: 1.55;
-  color: var(--color-text-muted);
-}
-
-.prices__note strong {
-  color: var(--color-text-dark);
-  font-weight: 600;
-}
-
 .prices__actions {
   display: flex;
   flex-wrap: wrap;
@@ -202,13 +260,30 @@
 
 .prices__actions .button {
   width: 100%;
-  max-width: 18rem;
+  max-width: 22rem;
   padding: 1rem 1.75rem;
 }
 
 @media (min-width: 40rem) {
+  ul.prices__geo {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .prices__geo + .prices__board {
+    margin-top: 1.75rem;
+  }
+
+  .prices__geo-item {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .prices__geo-item + .prices__geo-item {
+    border-top: 0;
+    border-left: 1px solid rgba(25, 25, 25, 0.07);
+  }
+
   .prices__board {
-    padding: 1.75rem 1.75rem 2rem;
+    padding: 2rem 2rem 2.25rem;
   }
 
   .prices__actions .button {
@@ -222,11 +297,19 @@
   }
 
   .prices__header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .prices__geo + .prices__board {
+    margin-top: 1.75rem;
+  }
+
+  .prices__geo-item {
+    padding: 1.35rem 1.75rem;
   }
 
   .prices__board {
-    padding: 2.25rem 2.25rem 2.5rem;
+    padding: 2.5rem 2.5rem 2.75rem;
   }
 
   .prices__columns {
@@ -235,36 +318,56 @@
   }
 
   .prices__column {
-    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.75rem;
   }
 
   .prices__column:first-child {
     padding-left: 0;
+    padding-right: 2rem;
   }
 
   .prices__column:last-child {
     padding-right: 0;
+    padding-left: 2rem;
+  }
+
+  .prices__column:not(:first-child):not(:last-child) {
+    padding-inline: 2rem;
   }
 
   .prices__column:not(:last-child) {
     border-right: 1px solid rgba(25, 25, 25, 0.08);
   }
 
-  .prices__footer {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 2rem;
+  .prices__footnote {
+    margin-top: auto;
   }
 
-  .prices__note {
-    max-width: 36rem;
+  .prices__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
   }
 }
 
 @media (min-width: 75rem) {
   .prices__column {
-    padding-inline: 2rem;
+    padding-inline: 2.25rem;
+  }
+
+  .prices__column:first-child {
+    padding-right: 2.5rem;
+  }
+
+  .prices__column:last-child {
+    padding-left: 2.5rem;
+  }
+
+  .prices__column:not(:first-child):not(:last-child) {
+    padding-inline: 2.5rem;
   }
 
   .prices__column-icon {
