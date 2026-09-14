@@ -37,9 +37,21 @@
 .refusal__board {
   display: grid;
   gap: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 1.35rem 1.2rem 1.5rem;
   border-radius: var(--radius-xl);
   background-color: var(--color-cutout);
+  overflow: hidden;
+}
+
+.refusal__picker-wrap,
+.refusal__panels {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .refusal__picker-label {
@@ -53,14 +65,17 @@
 
 .refusal__picker {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.5rem;
 }
 
 .refusal__choice {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.65rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   margin: 0;
   padding: 0.85rem 0.95rem;
   cursor: pointer;
@@ -85,25 +100,31 @@
   flex-shrink: 0;
   width: 1.05rem;
   height: 1.05rem;
+  margin-top: 0.15rem;
   accent-color: var(--color-accent);
 }
 
 .refusal__choice-text {
+  min-width: 0;
   font-family: var(--font-text);
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.4;
   color: var(--color-text-dark);
+  overflow-wrap: anywhere;
 }
 
 .refusal__choice:focus-within {
   outline: 0.1875rem solid var(--color-accent);
-  outline-offset: 0.125rem;
+  outline-offset: -0.1875rem;
 }
 
 .refusal__panel {
   display: none;
   gap: 1.15rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 1.15rem 1.1rem 1.25rem;
   border-radius: var(--radius-lg);
   background-color: var(--color-white);
@@ -122,12 +143,15 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-text-dark);
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .refusal__columns {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.15rem;
+  min-width: 0;
 }
 
 .refusal__col-title {
@@ -184,9 +208,20 @@
 
 .refusal__actions {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 0.75rem;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+}
+
+.refusal__actions .button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: center;
 }
 
 .refusal__hint {
@@ -202,6 +237,16 @@
   .refusal__picker {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .refusal__actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .refusal__actions .button {
+    width: auto;
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 60rem) {
@@ -213,13 +258,11 @@
   }
 
   .refusal__picker-wrap {
-    display: grid;
-    gap: 0.75rem;
     align-content: start;
   }
 
   .refusal__picker {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .refusal__columns {
