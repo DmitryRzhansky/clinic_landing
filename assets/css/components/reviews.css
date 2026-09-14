@@ -81,7 +81,7 @@
 
 #reviews-tab-avito:checked ~ .reviews__inner label[for="reviews-tab-avito"],
 #reviews-tab-yandex:checked ~ .reviews__inner label[for="reviews-tab-yandex"],
-#reviews-tab-vk:checked ~ .reviews__inner label[for="reviews-tab-vk"] {
+#reviews-tab-2gis:checked ~ .reviews__inner label[for="reviews-tab-2gis"] {
   color: var(--color-white);
   background-color: var(--color-accent);
   border-color: var(--color-accent);
@@ -111,7 +111,7 @@
 
 #reviews-tab-avito:checked ~ .reviews__inner [data-reviews-panel="avito"],
 #reviews-tab-yandex:checked ~ .reviews__inner [data-reviews-panel="yandex"],
-#reviews-tab-vk:checked ~ .reviews__inner [data-reviews-panel="vk"] {
+#reviews-tab-2gis:checked ~ .reviews__inner [data-reviews-panel="2gis"] {
   display: grid;
 }
 
