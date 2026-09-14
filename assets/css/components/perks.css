@@ -71,17 +71,18 @@
 .perks__item-title {
   display: block;
   margin: 0;
-  max-width: 14rem;
+  max-width: 22rem;
   font-family: var(--font-text);
   font-size: var(--font-size-body);
   font-weight: 600;
   line-height: 1.35;
   color: var(--color-text-dark);
+  text-wrap: balance;
 }
 
 .perks__text {
   margin: 0;
-  max-width: 16rem;
+  max-width: 22rem;
   font-family: var(--font-text);
   font-size: var(--font-size-body-sm);
   font-weight: 400;
