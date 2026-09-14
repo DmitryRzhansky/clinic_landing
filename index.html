@@ -9,7 +9,7 @@
       content="Вызов нарколога на дом в Москве круглосуточно. Позвоните +7 (495) 127-03-63 — специалисты прибудут в течение 30 минут."
     >
     <link rel="stylesheet" href="assets/vendor/lenis/lenis.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=127">
+    <link rel="stylesheet" href="assets/css/main.css?v=132">
   </head>
   <body>
     <main>
@@ -3280,51 +3280,121 @@
 
       <section class="certificates" id="certificates" data-certificates aria-labelledby="certificates-title">
         <div class="certificates__inner">
-          <h2 class="certificates__title" id="certificates-title">Аттестаты аккредитации</h2>
-          <ul class="certificates__grid" role="list">
-            <li class="certificates__item">
-              <button
-                class="certificates__trigger"
-                type="button"
-                data-certificates-open="assets/images/certificates/certificate-1.webp"
-                data-certificates-alt="Аттестат аккредитации"
-                aria-label="Открыть аттестат аккредитации"
-              >
-                <span class="certificates__figure">
-                  <img
-                    class="certificates__image"
-                    src="assets/images/certificates/certificate-1.webp"
-                    alt="Аттестат аккредитации"
-                    width="964"
-                    height="788"
-                    loading="lazy"
-                    decoding="async"
+          <header class="certificates__header">
+            <h2 class="certificates__title" id="certificates-title">Лицензия и документы</h2>
+            <p class="certificates__lead">
+              Официальные документы ООО «МНЦ РАВНОВЕСИЕ» — юридического лица
+              наркологической клиники «Профилактика». Нажмите на документ, чтобы
+              увеличить.
+            </p>
+          </header>
+
+          <div class="certificates__slider">
+            <div class="certificates__viewport">
+              <ul class="certificates__track" role="list" data-certificates-track>
+                <li class="certificates__slide" data-certificates-slide>
+                  <button
+                    class="certificates__trigger"
+                    type="button"
+                    data-certificates-open="assets/images/certificates/license-page-1.jpg"
+                    data-certificates-alt="Выписка из реестра лицензий, страница 1"
+                    aria-label="Открыть выписку из реестра лицензий, страница 1"
                   >
-                </span>
-              </button>
-            </li>
-            <li class="certificates__item">
-              <button
-                class="certificates__trigger"
-                type="button"
-                data-certificates-open="assets/images/certificates/certificate-2.webp"
-                data-certificates-alt="Аттестат аккредитации"
-                aria-label="Открыть аттестат аккредитации"
-              >
-                <span class="certificates__figure">
-                  <img
-                    class="certificates__image"
-                    src="assets/images/certificates/certificate-2.webp"
-                    alt="Аттестат аккредитации"
-                    width="895"
-                    height="779"
-                    loading="lazy"
-                    decoding="async"
+                    <span class="certificates__figure">
+                      <img
+                        class="certificates__image"
+                        src="assets/images/certificates/license-page-1.webp"
+                        alt="Выписка из реестра лицензий, страница 1"
+                        width="770"
+                        height="1024"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </span>
+                    <span class="certificates__caption">Выписка из реестра лицензий — стр. 1</span>
+                  </button>
+                </li>
+                <li class="certificates__slide" data-certificates-slide>
+                  <button
+                    class="certificates__trigger"
+                    type="button"
+                    data-certificates-open="assets/images/certificates/license-page-2.jpg"
+                    data-certificates-alt="Выписка из реестра лицензий, страница 2"
+                    aria-label="Открыть выписку из реестра лицензий, страница 2"
                   >
-                </span>
+                    <span class="certificates__figure">
+                      <img
+                        class="certificates__image"
+                        src="assets/images/certificates/license-page-2.webp"
+                        alt="Выписка из реестра лицензий, страница 2"
+                        width="770"
+                        height="1024"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </span>
+                    <span class="certificates__caption">Выписка из реестра лицензий — стр. 2</span>
+                  </button>
+                </li>
+                <li class="certificates__slide" data-certificates-slide>
+                  <button
+                    class="certificates__trigger"
+                    type="button"
+                    data-certificates-open="assets/images/certificates/ses-extract.jpg"
+                    data-certificates-alt="Выписка из санитарно-эпидемиологического заключения"
+                    aria-label="Открыть выписку из санитарно-эпидемиологического заключения"
+                  >
+                    <span class="certificates__figure">
+                      <img
+                        class="certificates__image"
+                        src="assets/images/certificates/ses-extract.webp"
+                        alt="Выписка из санитарно-эпидемиологического заключения"
+                        width="970"
+                        height="1024"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </span>
+                    <span class="certificates__caption">Выписка из санитарно-эпидемиологического заключения</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="certificates__controls">
+              <button
+                class="certificates__nav certificates__nav--prev"
+                type="button"
+                data-certificates-prev
+                aria-label="Предыдущий документ"
+                hidden
+              >
+                <img
+                  class="certificates__nav-icon"
+                  src="assets/icons/arrow-right.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                  decoding="async"
+                >
               </button>
-            </li>
-          </ul>
+              <button
+                class="certificates__nav certificates__nav--next"
+                type="button"
+                data-certificates-next
+                aria-label="Следующий документ"
+              >
+                <img
+                  class="certificates__nav-icon"
+                  src="assets/icons/arrow-right.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                  decoding="async"
+                >
+              </button>
+            </div>
+          </div>
         </div>
 
         <div class="certificates__lightbox" data-certificates-lightbox data-lenis-prevent hidden>
@@ -4337,7 +4407,7 @@
     <script src="assets/js/calculator.js?v=2" defer></script>
     <script src="assets/js/refusal.js?v=1" defer></script>
     <script src="assets/js/equipment.js?v=1" defer></script>
-    <script src="assets/js/certificates.js?v=1" defer></script>
+    <script src="assets/js/certificates.js?v=5" defer></script>
     <script src="assets/js/videos.js?v=6" defer></script>
     <script src="assets/js/faq.js?v=1" defer></script>
     <script src="assets/js/contact.js?v=1" defer></script>
