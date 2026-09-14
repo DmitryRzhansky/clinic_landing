@@ -188,6 +188,10 @@ ul.prices__geo {
   color: var(--color-text-muted);
 }
 
+.prices__desc + .prices__includes {
+  margin-top: 0.75rem;
+}
+
 .prices__list-title {
   margin: 1.25rem 0 0.65rem;
   font-family: var(--font-text);
