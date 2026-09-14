@@ -55,9 +55,11 @@
 
 .specialist-card__media {
   margin: 0;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  background-color: #e8ecef;
+  background-color: #ffffff;
+  padding: 0.75rem;
+  box-sizing: border-box;
 }
 
 .specialist-card__image {
@@ -65,8 +67,8 @@
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .specialist-card__body {
