@@ -10,7 +10,7 @@
 }
 
 .guidance__header {
-  max-width: 42rem;
+  max-width: 48rem;
   margin: 0 0 1.5rem;
 }
 
@@ -86,6 +86,11 @@
   border-bottom: 1px solid rgba(25, 25, 25, 0.12);
 }
 
+.guidance__path--hospital .guidance__path-title {
+  color: var(--color-text-dark);
+  border-bottom-color: rgba(28, 163, 151, 0.35);
+}
+
 .guidance__path--urgent .guidance__path-title {
   color: #123834;
   border-bottom-color: rgba(18, 56, 52, 0.28);
@@ -129,10 +134,14 @@
   background-color: #123834;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   .guidance__paths {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.75rem 2rem;
+  }
+
+  .guidance__path--urgent {
+    grid-column: 1 / -1;
   }
 }
 
@@ -146,10 +155,15 @@
   }
 
   .guidance__paths {
-    gap: 2rem 3rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 2.25rem;
+  }
+
+  .guidance__path--urgent {
+    grid-column: auto;
   }
 
   .guidance__item {
-    font-size: 1rem;
+    font-size: 0.9375rem;
   }
 }
