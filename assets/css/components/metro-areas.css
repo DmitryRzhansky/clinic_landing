@@ -1,0 +1,106 @@
+.metro-areas {
+  padding-block: 2.75rem 3.25rem;
+  background-color: var(--color-white);
+}
+
+.metro-areas__inner {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--section-padding-inline);
+}
+
+.metro-areas__title {
+  margin: 0 0 1.5rem;
+  max-width: 40rem;
+  font-family: var(--font-headline);
+  font-size: clamp(1.65rem, 1.15rem + 2vw, var(--font-size-h2));
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text-dark);
+  text-wrap: balance;
+}
+
+.metro-areas__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.metro-areas__item {
+  margin: 0;
+  min-width: 0;
+}
+
+.metro-areas__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 100%;
+  font-family: var(--font-text);
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.06em;
+  transition: color var(--transition-base);
+}
+
+.metro-areas__link::after {
+  content: "";
+  flex-shrink: 0;
+  width: 0.95rem;
+  height: 0.95rem;
+  background-color: currentColor;
+  mask: url("../../icons/specialists/arrow-right.svg") center / contain no-repeat;
+  -webkit-mask: url("../../icons/specialists/arrow-right.svg") center / contain no-repeat;
+  transform: rotate(-45deg);
+  transition: transform var(--transition-base);
+}
+
+.metro-areas__link:hover {
+  color: var(--color-accent);
+}
+
+.metro-areas__link:hover::after {
+  transform: rotate(-45deg) translate(0.12rem, -0.05rem);
+}
+
+.metro-areas__link:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.2rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .metro-areas__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 2rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .metro-areas {
+    padding-block: 3rem 3.75rem;
+  }
+
+  .metro-areas__title {
+    margin-bottom: 1.75rem;
+  }
+
+  .metro-areas__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.05rem 2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metro-areas__link:hover::after {
+    transform: rotate(-45deg);
+  }
+}

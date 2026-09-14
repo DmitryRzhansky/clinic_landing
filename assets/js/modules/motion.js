@@ -10,6 +10,7 @@ const FADE_TARGETS = [
   ".payment__inner",
   ".faq__inner",
   ".contact-section__inner",
+  ".metro-areas__inner",
   ".site-footer",
 ];
 
