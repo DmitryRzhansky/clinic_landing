@@ -1,0 +1,233 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100svh;
+  margin: 0;
+  background-color: var(--color-cutout);
+}
+
+.hero__inner {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  min-height: 100%;
+  margin-inline: auto;
+  padding: 1rem var(--section-padding-inline) 1.5rem;
+  box-sizing: border-box;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-text);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.55;
+}
+
+.breadcrumbs__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumbs__link:focus-visible {
+  outline: 0.125rem solid var(--color-accent);
+  outline-offset: 0.1875rem;
+  border-radius: 0.125rem;
+}
+
+.breadcrumbs__current {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.hero__layout {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(12.5rem, 1fr) auto;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 0;
+}
+
+.hero__media {
+  position: relative;
+  width: 100%;
+  min-height: 12.5rem;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background-color: #d7e6e4;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-headline);
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 3.25rem);
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--color-text-dark);
+  text-wrap: balance;
+}
+
+.hero__description {
+  margin: 0;
+  font-family: var(--font-text);
+  font-size: clamp(1rem, 0.94rem + 0.3vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.hero__description + .hero__description {
+  margin-top: 1em;
+}
+
+.hero__description:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.hero__phone {
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--transition-base);
+}
+
+.hero__phone:hover {
+  color: var(--color-accent-hover);
+}
+
+.hero__phone:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.1875rem;
+  border-radius: 0.125rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__actions .button {
+  width: 100%;
+  max-width: 17rem;
+  padding: 1rem 1.75rem;
+  font-size: 0.9375rem;
+}
+
+.hero__actions .button__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+@media (min-width: 60rem) {
+  .hero__inner {
+    gap: 1.75rem;
+    padding-block: 1.25rem 1.5rem;
+  }
+
+  .hero__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    align-items: stretch;
+    gap: 2.5rem;
+  }
+
+  .hero__media {
+    height: auto;
+    min-height: 100%;
+    align-self: stretch;
+  }
+
+  .hero__content {
+    justify-content: center;
+    text-align: left;
+    padding-inline: 0.25rem 0;
+  }
+
+  .hero__actions {
+    justify-content: flex-start;
+  }
+
+  .hero__actions .button {
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (min-width: 75rem) {
+  .hero__layout {
+    gap: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__phone,
+  .breadcrumbs__link {
+    transition: none;
+  }
+}

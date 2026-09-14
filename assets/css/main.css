@@ -1,0 +1,21 @@
+@import url("./base/reset.css");
+@import url("./base/root.css?v=48");
+@import url("./base/typography.css");
+@import url("./base/base.css?v=2");
+
+@import url("./layout/container.css");
+
+@import url("./utilities/visually-hidden.css");
+
+@import url("./components/button.css?v=48");
+@import url("./components/hero.css?v=12");
+@import url("./components/prices.css?v=2");
+@import url("./components/steps.css?v=3");
+@import url("./components/perks.css?v=2");
+@import url("./components/reviews.css?v=51");
+@import url("./components/certificates.css?v=3");
+@import url("./components/videos.css?v=47");
+@import url("./components/faq.css?v=43");
+@import url("./components/contact.css?v=45");
+@import url("./components/floating-actions.css?v=46");
+@import url("./components/motion.css");

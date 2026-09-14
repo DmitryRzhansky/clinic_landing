@@ -1,0 +1,27 @@
+html {
+  scroll-padding-top: 1.5rem;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: clip;
+  background-color: var(--color-cutout);
+}
+
+body.is-menu-open {
+  overflow: hidden;
+}
+
+main {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
