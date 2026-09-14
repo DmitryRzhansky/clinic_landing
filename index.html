@@ -9,7 +9,7 @@
       content="Вызов нарколога на дом у метро Белорусская: круглосуточный выезд, осмотр и помощь по показаниям. Стоимость согласовывается до процедур, при необходимости — госпитализация."
     >
     <link rel="stylesheet" href="assets/vendor/lenis/lenis.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=154">
+    <link rel="stylesheet" href="assets/css/main.css?v=156">
   </head>
   <body>
     <main>
@@ -3720,11 +3720,11 @@
               aria-labelledby="request-form-title"
             >
               <span class="request-form__title" id="request-form-title">
-                Получите консультацию
+                Вызовите нарколога
               </span>
               <p class="request-form__text">
-                Оставьте заявку — эксперт свяжется и уточнит стоимость и сроки
-                санитарно-эпидемиологической экспертизы.
+                Оставьте заявку — оператор свяжется, уточнит адрес у Белорусской
+                и согласует выезд. Работаем круглосуточно, анонимно.
               </p>
 
               <div
@@ -3809,34 +3809,13 @@
                   <span class="request-form__error" data-field-error hidden></span>
                 </label>
 
-                <label class="request-form__field request-form__field--select" for="request-product">
-                  <span class="visually-hidden">Тип услуги</span>
-                  <select
-                    id="request-product"
-                    name="product"
-                    data-required
-                    data-label="Тип услуги"
-                  >
-                    <option value="" selected>Тип услуги</option>
-                    <option value="proektnaya-dokumentaciya">Проектная документация</option>
-                    <option value="voda-i-vodnye-obekty">Вода и водные объекты</option>
-                    <option value="vidy-deyatelnosti-i-licenzirovanie">Виды деятельности и лицензирование</option>
-                    <option value="pereplanirovka-pomeshchenij">Перепланировка помещений</option>
-                    <option value="laboratornye-rezultaty-i-othody">Лабораторные результаты и отходы</option>
-                  </select>
-                  <span class="request-form__field-chevron" aria-hidden="true">
-                    <img src="assets/icons/contact/caret-down.svg" alt="" width="14" height="14" decoding="async">
-                  </span>
-                  <span class="request-form__error" data-field-error hidden></span>
-                </label>
-
                 <label class="request-form__field request-form__field--wide" for="request-details">
                   <span class="visually-hidden">Детали заявки</span>
                   <textarea
                     id="request-details"
                     name="details"
                     rows="3"
-                    placeholder="Объект, сроки и кратко о задаче"
+                    placeholder="Адрес, что случилось и удобное время для связи"
                   ></textarea>
                 </label>
               </div>
@@ -3876,54 +3855,98 @@
               <div class="contact-info__grid">
                 <div class="contact-info__column">
                   <div class="contact-info__item">
-                    <span class="contact-info__label">Офис компании:</span>
+                    <span class="contact-info__label">Адрес:</span>
                     <address class="contact-info__value">
-                      Санкт-Петербург, ул.&nbsp;Заставская, д.&nbsp;46, к.&nbsp;3, п.&nbsp;46Н, №&nbsp;1,2
+                      Москва, Сыромятнический 3-й пер., дом&nbsp;3/9, строение&nbsp;2, эт.&nbsp;2, оф.&nbsp;XIII, ком.&nbsp;1
                     </address>
                   </div>
 
                   <div class="contact-info__item">
                     <span class="contact-info__label">Часы работы:</span>
-                    <p class="contact-info__value">Пн–Пт: 08:00 – 17:00</p>
-                    <p class="contact-info__value">Сб–Вс: выходной</p>
+                    <p class="contact-info__value">Круглосуточно 24/7</p>
                   </div>
                 </div>
 
                 <div class="contact-info__column">
                   <div class="contact-info__item">
-                    <span class="contact-info__label">Телефоны и почта:</span>
+                    <span class="contact-info__label">Телефон и почта:</span>
                     <p class="contact-info__value">
-                      <a href="tel:+78122142149">8 (812) 214-21-49</a>
+                      <a href="tel:+74951270363">+7 (495) 127-03-63</a>
                     </p>
                     <p class="contact-info__value">
-                      <a href="tel:+79090355929">+7 (909) 035-59-29</a>
-                    </p>
-                    <p class="contact-info__value">
-                      <a href="mailto:info@sanexpert.pro">info@sanexpert.pro</a>
+                      <a href="mailto:info@profilactica.clinic">info@profilactica.clinic</a>
                     </p>
                   </div>
 
                   <div class="contact-info__item">
                     <span class="contact-info__label">Мессенджеры:</span>
-                    <p class="contact-info__value">
-                      <a href="https://max.ru/u/f9LHodD0cOIhGhnTt_zXgl6lsNzznFy1qVkS9QDvflXKVZrXu8PmgM32zGM" target="_blank" rel="noopener noreferrer">MAX</a>
-                    </p>
-                    <p class="contact-info__value">
-                      <a href="https://t.me/LyudmilaPetrovnaShavlinskaya" target="_blank" rel="noopener noreferrer">Telegram</a>
-                    </p>
+                    <ul class="contact-info__messengers" role="list">
+                      <li>
+                        <a
+                          class="contact-info__messenger"
+                          href="https://t.me/rehab_pro"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            class="contact-info__messenger-icon"
+                            src="assets/icons/messengers/telegram.png"
+                            alt=""
+                            width="18"
+                            height="18"
+                            decoding="async"
+                          >
+                          Телеграм
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="contact-info__messenger"
+                          href="https://max.ru/u/f9LHodD0cOJccokxATgR63Ldeb9eQgjGx0NuPeXagqNBXEmxs5d0ANCtnLU"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            class="contact-info__messenger-icon"
+                            src="assets/icons/messengers/max.png"
+                            alt=""
+                            width="18"
+                            height="18"
+                            decoding="async"
+                          >
+                          Макс
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="contact-info__messenger"
+                          href="https://wa.me/79854014382"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            class="contact-info__messenger-icon"
+                            src="assets/icons/messengers/whatsapp.svg"
+                            alt=""
+                            width="18"
+                            height="18"
+                            decoding="async"
+                          >
+                          Ватсап
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
               <div class="contact-info__map">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?lang=ru_RU&scroll=true&source=constructor-api&um=constructor%3Abd96e1e70380538d8aca392e57c4480e22d64b4f46455789009a70d0444113f3"
-                  title="Карта проезда к офису Sanexpert"
-                  loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allow="geolocation"
-                  allowfullscreen
-                ></iframe>
+                <script
+                  type="text/javascript"
+                  charset="utf-8"
+                  async
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A24ba5668937e26b01f9c72c05899fc3aceee420f3bdadbe7db2496a5dea5ce40&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+                ></script>
               </div>
             </div>
           </div>
@@ -4075,7 +4098,7 @@
           <li>
             <a
               class="floating-actions__link"
-              href="https://max.ru/u/f9LHodD0cOIhGhnTt_zXgl6lsNzznFy1qVkS9QDvflXKVZrXu8PmgM32zGM"
+              href="https://max.ru/u/f9LHodD0cOJccokxATgR63Ldeb9eQgjGx0NuPeXagqNBXEmxs5d0ANCtnLU"
               rel="noopener noreferrer"
               target="_blank"
               aria-label="MAX"
@@ -4093,7 +4116,7 @@
           <li>
             <a
               class="floating-actions__link"
-              href="https://wa.me/79090355929?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C.%20%D0%95%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BA%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%83."
+              href="https://wa.me/79854014382"
               rel="noopener noreferrer"
               target="_blank"
               aria-label="WhatsApp"
@@ -4111,7 +4134,7 @@
           <li>
             <a
               class="floating-actions__link"
-              href="https://t.me/LyudmilaPetrovnaShavlinskaya"
+              href="https://t.me/rehab_pro"
               rel="noopener noreferrer"
               target="_blank"
               aria-label="Telegram"
@@ -4129,8 +4152,8 @@
           <li>
             <a
               class="floating-actions__link"
-              href="mailto:info@sanexpert.pro"
-              aria-label="Написать на info@sanexpert.pro"
+              href="mailto:info@profilactica.clinic"
+              aria-label="Написать на info@profilactica.clinic"
               data-floating-link
             >
               <img
@@ -4145,8 +4168,8 @@
           <li>
             <a
               class="floating-actions__link"
-              href="tel:+78122142149"
-              aria-label="Позвонить 8 (812) 214-21-49"
+              href="tel:+74951270363"
+              aria-label="Позвонить +7 (495) 127-03-63"
               data-floating-link
             >
               <img
