@@ -9,7 +9,7 @@
       content="Вызов нарколога на дом в Москве круглосуточно. Позвоните +7 (495) 127-03-63 — специалисты прибудут в течение 30 минут."
     >
     <link rel="stylesheet" href="assets/vendor/lenis/lenis.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=112">
+    <link rel="stylesheet" href="assets/css/main.css?v=115">
   </head>
   <body>
     <main>
@@ -1710,6 +1710,208 @@
         </div>
       </section>
 
+      <section class="calculator" id="calculator" data-calculator aria-labelledby="calculator-title">
+        <div class="calculator__inner">
+          <header class="calculator__header">
+            <h2 class="calculator__title" id="calculator-title">
+              Рассчитать стоимость вызова нарколога у&nbsp;метро Белорусская
+            </h2>
+            <p class="calculator__lead">
+              Укажите адрес рядом с метро Белорусская и условия вызова. Калькулятор покажет
+              предварительную стоимость выезда нарколога и факторы, которые могут повлиять
+              на итоговую цену.
+            </p>
+          </header>
+
+          <div class="calculator__board">
+            <form class="calculator__form" data-calculator-form action="#" method="get">
+              <div class="calculator__field">
+                <label class="calculator__label" for="calculator-address">
+                  Адрес вызова
+                </label>
+                <input
+                  class="calculator__input"
+                  id="calculator-address"
+                  name="address"
+                  type="text"
+                  value="м. Белорусская, "
+                  autocomplete="street-address"
+                  required
+                >
+                <p class="calculator__hint">
+                  Можно уточнить улицу и дом рядом со станцией — зона уже задана.
+                </p>
+              </div>
+
+              <fieldset class="calculator__field calculator__field--when">
+                <legend class="calculator__label">Когда нужен выезд</legend>
+                <div class="calculator__options">
+                  <label class="calculator__option">
+                    <input
+                      class="calculator__option-input"
+                      type="radio"
+                      name="when"
+                      value="now"
+                      checked
+                    >
+                    <span class="calculator__option-body">
+                      <span class="calculator__option-title">Сейчас</span>
+                      <span class="calculator__option-text">Срочный выезд к Белорусской</span>
+                    </span>
+                  </label>
+                  <label class="calculator__option">
+                    <input
+                      class="calculator__option-input"
+                      type="radio"
+                      name="when"
+                      value="today"
+                    >
+                    <span class="calculator__option-body">
+                      <span class="calculator__option-title">Сегодня</span>
+                      <span class="calculator__option-text">В течение дня</span>
+                    </span>
+                  </label>
+                  <label class="calculator__option">
+                    <input
+                      class="calculator__option-input"
+                      type="radio"
+                      name="when"
+                      value="schedule"
+                    >
+                    <span class="calculator__option-body">
+                      <span class="calculator__option-title">Выбрать время</span>
+                      <span class="calculator__option-text">Назначить дату и час</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="calculator__datetime-wrap" data-calculator-datetime hidden>
+                  <label class="visually-hidden" for="calculator-datetime">
+                    Дата и время выезда
+                  </label>
+                  <input
+                    class="calculator__datetime"
+                    id="calculator-datetime"
+                    name="datetime"
+                    type="datetime-local"
+                  >
+                </div>
+              </fieldset>
+
+              <fieldset class="calculator__field">
+                <legend class="calculator__label">Тип обращения</legend>
+                <div class="calculator__options calculator__options--type">
+                  <label class="calculator__option">
+                    <input
+                      class="calculator__option-input"
+                      type="radio"
+                      name="type"
+                      value="visit"
+                      checked
+                    >
+                    <span class="calculator__option-body">
+                      <span class="calculator__option-title">Вызов нарколога</span>
+                      <span class="calculator__option-text">Осмотр и помощь на дому</span>
+                    </span>
+                  </label>
+                  <label class="calculator__option">
+                    <input
+                      class="calculator__option-input"
+                      type="radio"
+                      name="type"
+                      value="detox"
+                    >
+                    <span class="calculator__option-body">
+                      <span class="calculator__option-title">Вывод из запоя</span>
+                      <span class="calculator__option-text">Снятие острых симптомов</span>
+                    </span>
+                  </label>
+                  <label class="calculator__option">
+                    <input
+                      class="calculator__option-input"
+                      type="radio"
+                      name="type"
+                      value="other"
+                    >
+                    <span class="calculator__option-body">
+                      <span class="calculator__option-title">Другая выездная помощь</span>
+                      <span class="calculator__option-text">По ситуации на месте</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="calculator__field">
+                <legend class="calculator__label">Что влияет на цену</legend>
+                <div class="calculator__checks">
+                  <label class="calculator__check">
+                    <input
+                      class="calculator__check-input"
+                      type="checkbox"
+                      name="night"
+                      value="1"
+                    >
+                    <span class="calculator__check-text">
+                      Ночной выезд
+                      <span class="calculator__check-note">с 22:00 до 08:00</span>
+                    </span>
+                  </label>
+                  <label class="calculator__check">
+                    <input
+                      class="calculator__check-input"
+                      type="checkbox"
+                      name="drip"
+                      value="1"
+                    >
+                    <span class="calculator__check-text">
+                      Капельница на месте
+                      <span class="calculator__check-note">дезинтоксикация при выезде</span>
+                    </span>
+                  </label>
+                  <label class="calculator__check">
+                    <input
+                      class="calculator__check-input"
+                      type="checkbox"
+                      name="severe"
+                      value="1"
+                    >
+                    <span class="calculator__check-text">
+                      Осложнённое состояние
+                      <span class="calculator__check-note">усиленная схема помощи</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="calculator__actions">
+                <button class="button button--accent calculator__submit" type="submit">
+                  Рассчитать стоимость
+                </button>
+              </div>
+            </form>
+
+            <aside class="calculator__result" data-calculator-result aria-live="polite">
+              <h3 class="calculator__result-title">
+                Предварительная стоимость вызова нарколога у&nbsp;метро Белорусская
+              </h3>
+              <p class="calculator__result-price">
+                Выезд нарколога по указанному адресу: от
+                <strong data-calculator-price>3&nbsp;000&nbsp;₽</strong>.
+              </p>
+              <p class="calculator__result-text">
+                Окончательная стоимость зависит от фактического объёма медицинской помощи
+                после оценки состояния.
+              </p>
+              <p class="calculator__factors-title">Что учтено в расчёте</p>
+              <ul class="calculator__factors" data-calculator-factors>
+                <li class="calculator__factor">тип обращения: вызов нарколога</li>
+                <li class="calculator__factor">срочность: выезд сейчас</li>
+                <li class="calculator__factor">адрес в зоне метро Белорусская</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
       <section class="certificates" id="certificates" data-certificates aria-labelledby="certificates-title">
         <div class="certificates__inner">
           <h2 class="certificates__title" id="certificates-title">Аттестаты аккредитации</h2>
@@ -2766,6 +2968,7 @@
     <script type="module" src="assets/js/main.js?v=28"></script>
     <script src="assets/js/reviews.js?v=5" defer></script>
     <script src="assets/js/cases.js?v=1" defer></script>
+    <script src="assets/js/calculator.js?v=2" defer></script>
     <script src="assets/js/certificates.js?v=1" defer></script>
     <script src="assets/js/videos.js?v=6" defer></script>
     <script src="assets/js/faq.js?v=1" defer></script>
