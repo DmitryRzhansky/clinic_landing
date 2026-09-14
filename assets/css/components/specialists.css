@@ -78,6 +78,7 @@
 }
 
 .specialist-card__name {
+  display: block;
   margin: 0;
   font-family: var(--font-text);
   font-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);

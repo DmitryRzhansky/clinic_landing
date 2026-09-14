@@ -114,6 +114,7 @@
 }
 
 .refusal__panel-title {
+  display: block;
   margin: 0;
   font-family: var(--font-headline);
   font-size: clamp(1.2rem, 1.05rem + 0.55vw, 1.45rem);

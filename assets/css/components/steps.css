@@ -115,6 +115,7 @@
 }
 
 .steps__item-title {
+  display: block;
   margin: 0 0 0.25rem;
   font-family: var(--font-text);
   font-size: 1rem;

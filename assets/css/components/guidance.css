@@ -74,6 +74,7 @@
 }
 
 .guidance__path-title {
+  display: block;
   margin: 0 0 0.85rem;
   padding-bottom: 0.65rem;
   font-family: var(--font-headline);

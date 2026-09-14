@@ -249,6 +249,7 @@
 }
 
 .calculator__result-title {
+  display: block;
   margin: 0 0 0.75rem;
   font-family: var(--font-headline);
   font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);

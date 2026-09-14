@@ -69,6 +69,7 @@
 }
 
 .perks__item-title {
+  display: block;
   margin: 0;
   max-width: 14rem;
   font-family: var(--font-text);

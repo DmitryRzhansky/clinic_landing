@@ -57,6 +57,7 @@
 }
 
 .prices__column-title {
+  display: block;
   margin: 0;
   font-family: var(--font-headline);
   font-size: clamp(1.125rem, 1rem + 0.4vw, 1.375rem);
@@ -105,6 +106,7 @@
 }
 
 .prices__name {
+  display: block;
   margin: 0;
   font-family: var(--font-text);
   font-size: 1.0625rem;

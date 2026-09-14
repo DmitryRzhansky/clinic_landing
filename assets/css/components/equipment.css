@@ -157,6 +157,7 @@
 }
 
 .equipment__name {
+  display: block;
   margin: 0;
   font-family: var(--font-text);
   font-size: clamp(1.125rem, 1.05rem + 0.35vw, 1.35rem);
