@@ -9,7 +9,7 @@
       content="Вызов нарколога на дом в Москве круглосуточно. Позвоните +7 (495) 127-03-63 — специалисты прибудут в течение 30 минут."
     >
     <link rel="stylesheet" href="assets/vendor/lenis/lenis.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=125">
+    <link rel="stylesheet" href="assets/css/main.css?v=127">
   </head>
   <body>
     <main>
@@ -814,6 +814,520 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="equipment" id="equipment" data-equipment aria-labelledby="equipment-title">
+        <div class="equipment__inner">
+          <header class="equipment__header">
+            <h2 class="equipment__title" id="equipment-title">
+              Какое оборудование используется при выезде нарколога к&nbsp;метро Белорусская
+            </h2>
+            <p class="equipment__lead">
+              На выезд берём портативный диагностический и реанимационный набор:
+              чтобы оценить состояние на месте, контролировать показатели во время
+              помощи и при необходимости быстро среагировать на осложнения.
+            </p>
+          </header>
+
+          <div class="equipment__board">
+            <p class="equipment__picker-label" id="equipment-picker-label">Выберите оборудование</p>
+
+            <div class="equipment__picker" role="radiogroup" aria-labelledby="equipment-picker-label">
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="tonometer" checked>
+                <span class="equipment__choice-text">Тонометр</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="pulse-oximeter">
+                <span class="equipment__choice-text">Пульсоксиметр</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="ecg">
+                <span class="equipment__choice-text">Электрокардиограф</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="glucometer">
+                <span class="equipment__choice-text">Глюкометр</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="stethoscope">
+                <span class="equipment__choice-text">Фонендоскоп</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="thermometer">
+                <span class="equipment__choice-text">Термометр</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="ambu">
+                <span class="equipment__choice-text">Мешок Амбу</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="oxygen">
+                <span class="equipment__choice-text">Кислородное оборудование</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="infusion">
+                <span class="equipment__choice-text">Инфузионное оборудование</span>
+              </label>
+              <label class="equipment__choice">
+                <input class="equipment__choice-input" type="radio" name="equipment-item" value="medbag">
+                <span class="equipment__choice-text">Медицинская укладка</span>
+              </label>
+            </div>
+
+            <div class="equipment__stage">
+              <article class="equipment__panel is-active" data-equipment-panel="tonometer">
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/tonometer.webp"
+                    alt="Электронный тонометр Omron с манжетой"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Тонометр</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Omron</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">M2 Basic (HEM-7121-RU)</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Оценка гемодинамики при осмотре и во время терапии на дому</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Систолическое и диастолическое давление, пульс</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">На первичном осмотре, до и во время капельницы, при ухудшении самочувствия</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в базовой укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="pulse-oximeter" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/pulse-oximeter.webp"
+                    alt="Пульсоксиметр на палец"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Пульсоксиметр</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">ChoiceMMed</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">MD300C20</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Быстрый контроль оксигенации крови без забора анализов</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Насыщение крови кислородом (SpO₂) и частоту пульса</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При одышке, интоксикации, подозрении на гипоксию, во время инфузии</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в базовой укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="ecg" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/ecg.webp"
+                    alt="Портативный электрокардиограф"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Электрокардиограф</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Аксион</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">ЭК1Т-1/3-07 «Аксион»</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Портативная регистрация ЭКГ на дому при кардиорисках</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Ритм сердца, проводимость, признаки ишемии и аритмии</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При болях в груди, выраженной тахикардии, высоком давлении, перед интенсивной терапией</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в выездной укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="glucometer" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/glucometer.webp"
+                    alt="Глюкометр с тест-полоской"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Глюкометр</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Accu-Chek</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">Instant</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Экспресс-контроль уровня глюкозы в крови на месте</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Концентрацию глюкозы в капиллярной крови</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При слабости, спутанности сознания, диабете, подозрении на гипо- или гипергликемию</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в базовой укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="stethoscope" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/stethoscope.webp"
+                    alt="Медицинский фонендоскоп"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Фонендоскоп</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Little Doctor</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">LD Special</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Аускультация сердца и лёгких во время осмотра</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Тоны сердца, дыхание, хрипы и другие аускультативные признаки</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">На каждом первичном осмотре и при контроле состояния во время помощи</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в базовой укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="thermometer" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/thermometer.webp"
+                    alt="Электронный медицинский термометр"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Термометр</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Microlife</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">MT 3001</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Контроль температуры тела при осмотре и наблюдении</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Температуру тела</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При лихорадке, ознобе, признаках инфекции или тяжёлой интоксикации</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в базовой укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="ambu" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/ambu.webp"
+                    alt="Мешок Амбу для ручной вентиляции лёгких"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Мешок Амбу</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Ambu</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">SPUR II</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Ручная искусственная вентиляция лёгких в экстренной ситуации</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Поддержание дыхательного объёма и оксигенации при ослаблении дыхания</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При апноэ, критическом угнетении дыхания или остановке дыхания</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в экстренном комплекте</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="oxygen" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/oxygen.webp"
+                    alt="Портативный кислородный баллон с редуктором и маской"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Кислородное оборудование</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Armed</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">Баллон с редуктором и кислородной маской</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Подача кислорода при гипоксии и тяжёлой интоксикации</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Оксигенацию; расход кислорода регулируется редуктором</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При снижении SpO₂, одышке, цианозе, тяжёлом абстинентном состоянии</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в выездном комплекте</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="infusion" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/infusion.webp"
+                    alt="Инфузионная система для капельницы"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Инфузионное оборудование</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">Apexmed</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">Системы для инфузий + штатив</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Внутривенное введение растворов для дезинтоксикации и поддержки</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Скорость и объём инфузии, проходимость системы</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">При капельнице, восполнении жидкости и снятии острой интоксикации</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, в базовой укладке</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article class="equipment__panel" data-equipment-panel="medbag" hidden>
+                <figure class="equipment__media">
+                  <img
+                    class="equipment__image"
+                    src="assets/images/equipment/medbag.webp"
+                    alt="Медицинская укладка выездной службы"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </figure>
+                <div class="equipment__card">
+                  <h3 class="equipment__name">Медицинская укладка выездной службы</h3>
+                  <dl class="equipment__specs">
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Марка</dt>
+                      <dd class="equipment__value">УМСП / Elite Bags</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Модель</dt>
+                      <dd class="equipment__value">Выездная сумка с модульными отсеками</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Назначение</dt>
+                      <dd class="equipment__value">Транспортировка препаратов, расходников и диагностического набора</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Что измеряет / контролирует</dt>
+                      <dd class="equipment__value">Комплектность выездного набора и быстрый доступ к нужным средствам</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Когда используется</dt>
+                      <dd class="equipment__value">На каждом вызове: от осмотра до капельницы и экстренных манипуляций</dd>
+                    </div>
+                    <div class="equipment__row">
+                      <dt class="equipment__label">Есть ли на каждом выезде</dt>
+                      <dd class="equipment__value">
+                        <span class="equipment__badge equipment__badge--always">Да, обязательный комплект</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -3822,6 +4336,7 @@
     <script src="assets/js/cases.js?v=1" defer></script>
     <script src="assets/js/calculator.js?v=2" defer></script>
     <script src="assets/js/refusal.js?v=1" defer></script>
+    <script src="assets/js/equipment.js?v=1" defer></script>
     <script src="assets/js/certificates.js?v=1" defer></script>
     <script src="assets/js/videos.js?v=6" defer></script>
     <script src="assets/js/faq.js?v=1" defer></script>
