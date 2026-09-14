@@ -378,6 +378,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.625rem;
   width: 100%;
   min-width: 0;
   height: 3.125rem;
@@ -395,6 +396,12 @@
   transition:
     background-color var(--transition-base),
     transform var(--transition-base);
+}
+
+.request-form__button-icon {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .request-form__button:hover,
