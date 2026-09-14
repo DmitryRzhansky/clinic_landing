@@ -51,15 +51,8 @@
   transition: color var(--transition-base);
 }
 
-.metro-areas__link::after {
-  content: "";
+.metro-areas__arrow {
   flex-shrink: 0;
-  width: 0.95rem;
-  height: 0.95rem;
-  background-color: currentColor;
-  mask: url("../../icons/specialists/arrow-right.svg") center / contain no-repeat;
-  -webkit-mask: url("../../icons/specialists/arrow-right.svg") center / contain no-repeat;
-  transform: rotate(-45deg);
   transition: transform var(--transition-base);
 }
 
@@ -67,8 +60,8 @@
   color: var(--color-accent);
 }
 
-.metro-areas__link:hover::after {
-  transform: rotate(-45deg) translate(0.12rem, -0.05rem);
+.metro-areas__link:hover .metro-areas__arrow {
+  transform: translate(0.12rem, -0.05rem);
 }
 
 .metro-areas__link:focus-visible {
@@ -100,7 +93,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .metro-areas__link:hover::after {
-    transform: rotate(-45deg);
+  .metro-areas__link:hover .metro-areas__arrow {
+    transform: none;
   }
 }
